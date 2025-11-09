@@ -3,8 +3,7 @@ import BuiltOnExcellence from '@/components/home/built-on-excellence';
 import PremiumSolution from '@/components/home/premium-solution';
 import WhySpecialAVL from '@/components/home/why-special-avl';
 import TrustedByLeaders from '@/components/home/trusted-by-leaders';
-import ReadTheLatestNews from '@/components/home/Read-the-Latest-News';
-
+import ReadTheLatestNews from '@/components/home/read-the-latest-news';
 const Home = () => {
     return (
         <>
