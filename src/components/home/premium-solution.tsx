@@ -37,7 +37,7 @@ const PremiumSolution = () => {
                         return (
                             <div
                                 key={index}
-                                className="grid w-full  border sm:grid-cols-2  items-center border-b"
+                                className="grid w-full  sm:grid-cols-2  items-center"
                                 data-isOdd={!isEven ? "true" : "false"}
                             >
                                 <div 

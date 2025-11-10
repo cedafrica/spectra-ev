@@ -1,7 +1,23 @@
 import MaxContainer from "../common/max-container";
 import { Button } from "../ui/button";
+import { useRef } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+} from "@/components/ui/carousel"
+import type { CarouselApi } from "@/components/ui/carousel"
 const TrustedByLeaders = () => {
+    const carouselApiRef = useRef<CarouselApi>(undefined);
+
+    const scrollPrev = () => {
+        carouselApiRef.current?.scrollPrev();
+    };
+
+    const scrollNext = () => {
+        carouselApiRef.current?.scrollNext();
+    };
     const leaders = [
         {
             image: "/ma.png",
@@ -15,6 +31,14 @@ const TrustedByLeaders = () => {
             image: "/infiled.png",
             description: "INFILED specializes in high-quality LED display solutions, offering innovative screens for events, retail, broadcasting, and large-scale installations."
         },
+        {
+            image: "/infiled.png",
+            description: "INFILED specializes in high-quality LED display solutions, offering innovative screens for events, retail, broadcasting, and large-scale installations."
+        },
+        {
+            image: "/infiled.png",
+            description: "INFILED specializes in high-quality LED display solutions, offering innovative screens for events, retail, broadcasting, and large-scale installations."
+        },
     ]
     return (
         <section className="sm:px-32 sm:pt-[6.6rem]">
@@ -22,40 +46,51 @@ const TrustedByLeaders = () => {
             <p className="text-center mx-auto text-[2rem] max-w-[47.1rem]">We partner with the world's most respected audiovisual brands</p>
 
             <MaxContainer
-                className="grid grid-cols-3 sm:mt-32 gap-[2.4rem]" 
+                className="sm:mt-32"
             >
-                {
-                    leaders.map((item, index) => {
-                        return (
-                            <div
-                                className="px-[2.4rem] pt-[3.2rem] pb-[6.8rem] bg-[#F5F5F5] w-full rounded-[.54rem]"
-                                key={index}
-                            >
-                                <img
-                                    src={item.image}
-                                    alt="logo"
-                                />
-                                <p className="text-[1.8rem] mt-[7.9rem]">{item.description}</p>
-                            </div>
-                        )
-                    })
-                }
+                <Carousel className="w-full" setApi={(api) => carouselApiRef.current = api}>
+                    <CarouselContent className="w-full">
+                        {
+                            leaders.map((item, index) => {
+                                return (
+                                    <CarouselItem 
+                                        key={index}
+                                        className="basis-1/3"
+                                    >
+                                        <div
+                                            className="px-[2.4rem] pt-[3.2rem] pb-[6.8rem] bg-[#F5F5F5] w-full rounded-[.54rem]"
+                                            key={index}
+                                        >
+                                            <img
+                                                src={item.image}
+                                                alt="logo"
+                                            />
+                                            <p className="text-[1.8rem] mt-[7.9rem]">{item.description}</p>
+                                        </div>
+                                    </CarouselItem>
+                                )
+                            })
+                        }
+                    </CarouselContent>
+                </Carousel>
             </MaxContainer>
             <div className="flex justify-center mt-[4.1rem] gap-[1.6rem]">
                 <Button
                     variant="outline"
-                    className="rounded-full border-black size-[5.8rem]" 
+                    className="rounded-full border-black size-[5.8rem]"
+                    onClick={scrollPrev}
                 >
                     <ArrowLeft
-                        className="size-[2.1rem]" 
+                        className="size-[2.1rem]"
                     />
                 </Button>
                 <Button
                     variant="outline"
-                    className="rounded-full border-black size-[5.8rem]" 
+                    className="rounded-full border-black size-[5.8rem]"
+                    onClick={scrollNext}
                 >
                     <ArrowRight
-                        className="size-[2.1rem]" 
+                        className="size-[2.1rem]"
                     />
                 </Button>
             </div>

@@ -18,7 +18,7 @@ const WhySpecialAVL = () => {
         }
     ]
     return (
-        <section className="bg-black sm:px-32 sm:pt-[6.3rem] text-white">
+        <section className="bg-black sm:px-32 sm:pb-[11.1rem] sm:pt-[6.3rem] text-white">
             <h2 className="text-center text-[4.3rem] font-semibold">Why Spectra AVL</h2>
             <p className="text-center text-[2rem] sm:max-w-240 mx-auto">We are the bridge between innovation and execution, bringing world-class audiovisual solutions to Nigeria.</p>
 

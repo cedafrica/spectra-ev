@@ -4,6 +4,7 @@ import PremiumSolution from '@/components/home/premium-solution';
 import WhySpecialAVL from '@/components/home/why-special-avl';
 import TrustedByLeaders from '@/components/home/trusted-by-leaders';
 import ReadTheLatestNews from '@/components/home/read-the-latest-news';
+import Brands from '@/components/common/brands';
 const Home = () => {
     return (
         <>
@@ -12,6 +13,7 @@ const Home = () => {
             <PremiumSolution />
             <WhySpecialAVL />
             <TrustedByLeaders />
+            <Brands />
             <ReadTheLatestNews />
         </>
     );

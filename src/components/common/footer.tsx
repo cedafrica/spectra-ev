@@ -1,5 +1,6 @@
 import MaxContainer from "./max-container";
 import { Link } from "react-router-dom";
+import { Mail } from "lucide-react";
 
 const Footer = () => {
     return (
@@ -79,7 +80,13 @@ const Footer = () => {
                 </div>
                 <div className="font-semibold w-fit text-[2rem] mb-4">
                     <h2 className="">Get in Touch</h2>
-                    <Link className="underline font-normal text-[1.8rem]" to={"#"}>projects@savl.pro</Link>
+                    <Link
+                        className="underline font-normal text-[1.8rem]"
+                        to={"#"}
+                    >
+                        <Mail className="inline-block mr-2" />
+                        projects@savl.pro
+                    </Link>
                 </div>
             </MaxContainer>
         </footer>

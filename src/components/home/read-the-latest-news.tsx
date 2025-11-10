@@ -1,7 +1,7 @@
 import MaxContainer from "../common/max-container";
 import {
     UserRound,
-    Calendar
+    Calendar,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
