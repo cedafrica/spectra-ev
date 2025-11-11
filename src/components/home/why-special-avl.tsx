@@ -18,15 +18,15 @@ const WhySpecialAVL = () => {
         }
     ]
     return (
-        <section className="bg-black sm:px-32 sm:pb-[11.1rem] sm:pt-[6.3rem] text-white">
-            <h2 className="text-center text-[4.3rem] font-semibold">Why Spectra AVL</h2>
-            <p className="text-center text-[2rem] sm:max-w-240 mx-auto">We are the bridge between innovation and execution, bringing world-class audiovisual solutions to Nigeria.</p>
+        <section className="bg-black px-10 sm:px-32 sm:pb-[11.1rem] pt-[3.1rem] sm:pt-[6.3rem] text-white">
+            <h2 className="text-center text-[2.8rem] sm:text-[4.3rem] font-semibold">Why Spectra AVL</h2>
+            <p className="text-center text-[1.6rem] sm:text-[2rem] sm:max-w-240 mx-auto">We are the bridge between innovation and execution, bringing world-class audiovisual solutions to Nigeria.</p>
 
             <MaxContainer
-                className="mt-36 flex justify-center items-center gap-32"
+                className="sm:mt-36 flex-col-reverse mt-[3rem] sm:flex-row flex justify-center items-center gap-32"
             >
                 <img
-                    className="max-w-[50.8rem]"
+                    className="w-full max-w-[50.8rem]"
                     src="/lights.png"
                     alt=""
                 />

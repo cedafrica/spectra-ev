@@ -3,17 +3,17 @@ import Marquee from "react-fast-marquee";
 
 const Brands = () => {
     const logos = [
-        { src: 'gtbank.svg', className: '' },
-        { src: 'bua.svg', className: '' },
-        { src: 'mastercard.svg', className: '' },
-        { src: 'pe.svg', className: '' },
+        { src: 'gtbank.svg', className: 'sm:w-[18rem] w-40' },
+        { src: 'bua.svg', className: 'sm:w-[12rem] w-30' },
+        { src: 'mastercard.svg', className: 'sm:w-[15rem] w-40' },
+        { src: 'pe.svg', className: 'w-60 sm:w-80' },
         { src: 'vis.svg', className: '' },
-        { src: 'boothy.svg', className: '' },
-        { src: 'uba.svg', className: '' }
+        { src: 'boothy.svg', className: 'sm:w-[20rem] w-50' },
+        { src: 'uba.svg', className: 'sm:w-[18rem] w-35' }
     ]
     
     return ( 
-        <section className="sm:py-[5rem]">
+        <section className="sm:py-20 py-12">
             <MaxContainer>
                 <div className="relative">
                     {/* Left fade overlay */}

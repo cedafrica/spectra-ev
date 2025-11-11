@@ -35,12 +35,12 @@ const ReadTheLatestNews = () => {
 
     ]
     return (
-        <section className="sm:pt-24 sm:pb-[5.9rem] sm:px-32">
-            <h2 className="text-center text-[3.8rem]">Read The Latest News</h2>
-            <p className="text-center mx-auto text-[2rem] max-w-[47.1rem]">Stay Updated with Today’s Top Stories</p>
+        <section className="sm:pt-24 sm:pb-[5.9rem] pb-[4.1rem] px-10 sm:px-32">
+            <h2 className="text-center text-[2.2rem] font-semibold sm:text-[3.8rem]">Read The Latest News</h2>
+            <p className="text-center mx-auto text-[1.8rem] sm:text-[2rem] max-w-[47.1rem]">Stay Updated with Today’s Top Stories</p>
 
             <MaxContainer
-                className="grid grid-cols-3 gap-8 mt-[5.8rem]"
+                className="grid sm:grid-cols-3 gap-8 mt-[5.8rem]"
             >
                 {
                     News.map((item, index) => {
@@ -53,7 +53,7 @@ const ReadTheLatestNews = () => {
                                     src={item.image}
                                     alt="logo"
                                 />
-                                <div className="p-[2.3rem] flex flex-col bg-[#F5F5F5]">
+                                <div className="sm:p-[2.3rem] p-[1.4rem] flex flex-col bg-[#F5F5F5]">
                                     <div className="flex items-center justify-between">
                                         <p className="">
                                             <UserRound className="inline-block mr-2" />
@@ -65,8 +65,8 @@ const ReadTheLatestNews = () => {
                                             <span className="text-[1.5rem]">{item.date}</span>
                                         </p>
                                     </div>
-                                    <h3 className="text-[2rem] font-semibold w-[85%] my-8">{item.title}</h3>
-                                    <p className="text-[1.8rem]">{item.description}</p>
+                                    <h3 className="sm:text-[2rem] text-[1.8rem] font-semibold w-full sm:w-[85%] my-4 sm:my-8">{item.title}</h3>
+                                    <p className="sm:text-[1.8rem] text-[1.6rem]">{item.description}</p>
 
                                     <Button
                                      asChild

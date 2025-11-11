@@ -19,4 +19,10 @@ html {
 body {
   font-family: 'Figtree', Helvetica, sans-serif;
   font-optical-sizing: auto;
+  width: 100vw;
+}
+
+#root {
+  width: 100vw;
+  overflow-x: hidden;
 }

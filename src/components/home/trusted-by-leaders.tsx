@@ -41,12 +41,12 @@ const TrustedByLeaders = () => {
         },
     ]
     return (
-        <section className="sm:px-32 sm:pt-[6.6rem]">
-            <h2 className="text-center text-[3.8rem]">Trusted by Industry Leaders</h2>
-            <p className="text-center mx-auto text-[2rem] max-w-[47.1rem]">We partner with the world's most respected audiovisual brands</p>
+        <section className="sm:px-32 px-10 sm:pt-[6.6rem] pt-[3.1rem]">
+            <h2 className="text-center sm:text-[3.8rem] font-semibold text-[2.8rem]">Trusted by Industry Leaders</h2>
+            <p className="text-center mx-auto sm:text-[2rem] text-[1.6rem] max-w-[47.1rem]">We partner with the world's most respected audiovisual brands</p>
 
             <MaxContainer
-                className="sm:mt-32"
+                className="sm:mt-32 mt-[4.1rem]"
             >
                 <Carousel className="w-full" setApi={(api) => carouselApiRef.current = api}>
                     <CarouselContent className="w-full">
@@ -55,7 +55,7 @@ const TrustedByLeaders = () => {
                                 return (
                                     <CarouselItem 
                                         key={index}
-                                        className="basis-1/3"
+                                        className="sm:basis-1/3"
                                     >
                                         <div
                                             className="px-[2.4rem] pt-[3.2rem] pb-[6.8rem] bg-[#F5F5F5] w-full rounded-[.54rem]"
@@ -74,23 +74,23 @@ const TrustedByLeaders = () => {
                     </CarouselContent>
                 </Carousel>
             </MaxContainer>
-            <div className="flex justify-center mt-[4.1rem] gap-[1.6rem]">
+            <div className="flex justify-center mt-[1.6rem] sm:mt-[4.1rem] gap-[1.6rem]">
                 <Button
                     variant="outline"
-                    className="rounded-full border-black size-[5.8rem]"
+                    className="rounded-full border-black sm:size-[5.8rem] size-[4.1rem]"
                     onClick={scrollPrev}
                 >
                     <ArrowLeft
-                        className="size-[2.1rem]"
+                        className="sm:size-[2.1rem] size-[1.6rem]"
                     />
                 </Button>
                 <Button
                     variant="outline"
-                    className="rounded-full border-black size-[5.8rem]"
+                    className="rounded-full border-black sm:size-[5.8rem] size-[4.1rem]"
                     onClick={scrollNext}
                 >
                     <ArrowRight
-                        className="size-[2.1rem]"
+                        className="sm:size-[2.1rem] size-[1.6rem]"
                     />
                 </Button>
             </div>

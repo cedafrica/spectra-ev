@@ -30,17 +30,17 @@ const Nav = () => {
         },
     ]
     return (
-        <nav className="bg-[#000000] px-32 py-4">
+        <nav className="bg-[#000000] w-full sm:px-32 px-10 py-4">
             <MaxContainer
                 className="flex justify-between items-center"
             >
                 <img
                     src="/spectra-logo.svg"
                     alt="logo"
-                    className="w-60 h-auto"
+                    className="sm:w-60 w-[8.7rem] h-auto"
                 />
 
-                <ul className="flex gap-[3.2rem]">
+                <ul className="sm:flex hidden gap-[3.2rem]">
                     {NavItems.map((item) => (
                         <li
                             key={item.href}

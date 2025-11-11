@@ -25,9 +25,9 @@ const PremiumSolution = () => {
 
     ]
     return (
-        <section className="bg-white pt-[8.1rem]">
-            <h2 className="text-center font-semibold sm:text-[4rem]">Premium Solutions</h2>
-            <p className="text-center mx-auto sm:text-[2rem] max-w-[55.8rem]">Comprehensive audiovisual services backed by global partnerships and local expertise</p>
+        <section className="bg-white sm:pt-[8.1rem] pb-[4.1rem] sm:pb-0 px-10 sm:px-0 pt-[6.7rem]">
+            <h2 className="text-center font-semibold sm:text-[4rem] text-[3.2rem]">Premium Solutions</h2>
+            <p className="text-center mx-auto sm:text-[2rem] text-[1.8rem] max-w-[55.8rem]">Comprehensive audiovisual services backed by global partnerships and local expertise</p>
 
             <MaxContainer className="mt-[6.2rem] w-full">
                 {
@@ -37,14 +37,14 @@ const PremiumSolution = () => {
                         return (
                             <div
                                 key={index}
-                                className="grid w-full  sm:grid-cols-2  items-center"
+                                className="grid w-full gap-[2.1rem] sm:gap-0 sm:grid-cols-2  items-center"
                                 data-isOdd={!isEven ? "true" : "false"}
                             >
                                 <div 
-                                    className={`self-center max-w-220 ${isEven ? 'order-2 pl-16' : 'order-1 pl-32'}`}>
-                                    <h2 className="text-[9rem] sm:font-bold leading-40">{solution.name}</h2>
-                                    <p className="text-[2.2rem] sm:mt-[2.8rem]">{solution.text}</p>
-                                    <Button className="px-8 sm:mt-10 bg-transparent border border-black rounded-4xl text-[1.2rem] text-black py-6" asChild>
+                                    className={`self-center max-w-220 ${isEven ? 'sm:order-2 sm:pl-16' : 'sm:order-1 sm:pl-32'}`}>
+                                    <h2 className="sm:text-[9rem] mt-[2.1rem] sm:mt-0 text-[2.8rem] font-semibold sm:font-bold sm:leading-40">{solution.name}</h2>
+                                    <p className="sm:text-[2.2rem] text-[1.8rem] mt-4 sm:mt-[2.8rem]">{solution.text}</p>
+                                    <Button className="px-8 sm:mt-10 bg-transparent border border-black rounded-4xl text-[1.2rem] text-black my-8 py-6" asChild>
                                         <Link to={""}>Learn More</Link>
                                     </Button>
                                 </div>
