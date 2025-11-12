@@ -13,7 +13,7 @@ const Brands = () => {
     ]
     
     return ( 
-        <section className="sm:py-20 py-12">
+        <section className="sm:py-20 py-4">
             <MaxContainer>
                 <div className="relative">
                     {/* Left fade overlay */}
