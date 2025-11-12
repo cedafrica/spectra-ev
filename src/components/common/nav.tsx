@@ -1,8 +1,20 @@
 import MaxContainer from "./max-container";
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 const Nav = () => {
+    const [open, setOpen] = useState(false);
 
+    const toggleNav = () => {
+        setOpen(!open);
+    };
+    useEffect(() => {
+        if (open) {
+            document.body.style.position = "fixed";
+        } else {
+            document.body.style.position = "static";
+        }
+    }, [open]);
     const NavItems = [
         {
             label: "Home",
@@ -37,10 +49,13 @@ const Nav = () => {
                 <img
                     src="/spectra-logo.svg"
                     alt="logo"
-                    className="sm:w-60 w-[8.7rem] h-auto"
+                    className="sm:w-60 relative z-10 w-[8.7rem] h-auto"
                 />
 
-                <ul className="sm:flex hidden gap-[3.2rem]">
+                <ul 
+                    className="flex flex-col sm:flex-row fixed sm:static inset-0 sm:bg-transparent bg-black px-10 sm:px-0 pt-40 sm:pt-0 gap-[1.4rem] sm:gap-[3.2rem] data-[open=true]:translate-x-0 sm:translate-x-0 data-[open=false]:translate-x-full  transition-all duration-500 ease-out"
+                    data-open={open}
+                >
                     {NavItems.map((item) => (
                         <li
                             key={item.href}
@@ -55,6 +70,24 @@ const Nav = () => {
                         </li>
                     ))}
                 </ul>
+                <div
+                    className={`overflow-hidden transition-all duration-500 ease-out flex flex-col items-center justify-between h-[1.7rem] relative z-20 sm:hidden ${open ? "w-12" : "w-10"
+                        }`}
+                    onClick={toggleNav}
+                >
+                    <div
+                        className={`h-[.18rem] bg-white w-full origin-right transition-all duration-500 ease-out ${open ? "-rotate-45 w-[2.7rem]" : ""
+                            }`}
+                    ></div>
+                    <div
+                        className={`h-[.18rem] bg-white w-full origin-right transition-all duration-500 ease-out ${open ? "translate-x-32 translate-y-31" : ""
+                            }`}
+                    ></div>
+                    <div
+                        className={`h-[.18rem] bg-white w-full origin-right transition-all duration-500 ease-out ${open ? "rotate-45 w-[2.7rem]" : ""
+                            }`}
+                    ></div>
+                </div>
             </MaxContainer>
         </nav>
     );
