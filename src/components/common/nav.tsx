@@ -1,13 +1,20 @@
 import MaxContainer from "./max-container";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 const Nav = () => {
     const [open, setOpen] = useState(false);
+    const location = useLocation();
 
     const toggleNav = () => {
         setOpen(!open);
     };
+
+    // Close nav when route changes
+    useEffect(() => {
+        setOpen(false);
+    }, [location.pathname]);
+
     useEffect(() => {
         if (open) {
             document.body.style.position = "fixed";
@@ -15,6 +22,7 @@ const Nav = () => {
             document.body.style.position = "static";
         }
     }, [open]);
+
     const NavItems = [
         {
             label: "Home",
@@ -52,7 +60,7 @@ const Nav = () => {
                     className="sm:w-60 relative z-10 w-[8.7rem] h-auto"
                 />
 
-                <ul 
+                <ul
                     className="flex flex-col sm:flex-row fixed sm:static inset-0 sm:bg-transparent bg-black px-10 sm:px-0 pt-40 sm:pt-0 gap-[1.4rem] sm:gap-[3.2rem] data-[open=true]:translate-x-0 sm:translate-x-0 data-[open=false]:translate-x-full  transition-all sm:data-[open=false]:translate-x-0 z-2 duration-500 ease-out"
                     data-open={open}
                 >
