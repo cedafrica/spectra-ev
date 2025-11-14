@@ -38,11 +38,15 @@ const Nav = () => {
         },
         {
             label: "Projects",
-            href: "/blog",
+            href: "/projects",
+        },
+        {
+            label: "Partners",
+            href: "/partnership",
         },
         {
             label: "News",
-            href: "/projects",
+            href: "/news",
         },
         {
             label: "Contact",

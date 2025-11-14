@@ -7,7 +7,7 @@ const Services = () => {
     return (
         <>
             <Hero />
-            <div className="px-10">
+            <div className="px-10 pb-20 sm:pb-0">
                 <Solutions />
             </div>
             <OurProcess />
