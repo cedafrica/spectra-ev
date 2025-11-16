@@ -107,7 +107,7 @@ const ContactForm = () => {
       <MaxContainer className="max-w-[900px]">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left: Contact Form */}
-          <div className="bg-[#F5F5F5] max-w-[40rem] rounded-lg p-8">
+          <div className="bg-[#F5F5F5] max-w-160 rounded-lg p-8">
             <form onSubmit={handleSubmit} className="space-y-6">
               {formFields.map((field) => (
                 <div key={field.name} className="space-y-5">
