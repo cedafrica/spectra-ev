@@ -8,6 +8,8 @@ import Project from './pages/our-project'
 import Partnership from './pages/partnership'
 import NewsLayout from './layout/news-layout'
 import News from './pages/news'
+import NewsInfo from './components/news/news-info'
+import Contact from './pages/contact'
 
 function App() {
   return (
@@ -36,8 +38,13 @@ function App() {
         />
         <Route
           element={<NewsLayout />}>
-          <Route path="*" element={<News />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/news/:id" element={<NewsInfo />} />
         </Route>
+        <Route
+          path='/contact'
+          element={<Contact />}
+        />
       </Route>
     </Routes>
   )

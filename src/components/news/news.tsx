@@ -11,7 +11,7 @@ const News = () => {
             time: "8",
             title: "Spectra AVL Secures Partnership with Infiled for LED Installation",
             decription: "Spectra AVL is proud to announce a groundbreaking Audio Engineering Partnership aimed at revolutionizing sound experiences across various industries.",
-            link: "#"
+            link: "/news/123"
         },
         {
             name: "Audio",
@@ -20,7 +20,7 @@ const News = () => {
             time: "8",
             title: "Spectra AVL Secures Partnership with Infiled for LED Installation",
             decription: "Spectra AVL is proud to announce a groundbreaking Audio Engineering Partnership aimed at revolutionizing sound experiences across various industries.",
-            link: "#"
+            link: "/news/123"
         },
         {
             name: "Audio",
@@ -29,7 +29,7 @@ const News = () => {
             time: "8",
             title: "Spectra AVL Secures Partnership with Infiled for LED Installation",
             decription: "Spectra AVL is proud to announce a groundbreaking Audio Engineering Partnership aimed at revolutionizing sound experiences across various industries.",
-            link: "#"
+            link: "/news/123"
         },
         {
             name: "Audio",
@@ -38,13 +38,62 @@ const News = () => {
             time: "8",
             title: "Spectra AVL Secures Partnership with Infiled for LED Installation",
             decription: "Spectra AVL is proud to announce a groundbreaking Audio Engineering Partnership aimed at revolutionizing sound experiences across various industries.",
-            link: "#"
+            link: "/news/123"
         },
     ]
 
     return (
-        <div className="flex-1">
-            <div className="grid sm:gap-8 sm:grid-cols-2">
+
+        <div>
+            <div className="">
+                <div className="flex flex-col sm:flex-row">
+                    <div className="relative w-full h-80  mt-11 sm:mt-0 sm:w-[32.1rem] sm:h-[30.1rem] shrink-0">
+                        <img
+                            src="/dance.png"
+                            alt="dance"
+                            className="absolute inset-0 w-full h-full object-cover"
+                        />
+                        <span className="text-[1.4rem] absolute left-4 top-4 p-2 bg-[#FFFFFF] rounded-[.4rem]">
+                            Featured
+                        </span>
+                    </div>
+
+                    <div className="border-[1.5px] flex-1 sm:p-8 p-4 bg-[#F5F5F5] border-black">
+                        <div className="flex items-center justify-between">
+                            <span className="p-2 sm:text-[1.4rem] text-[1.2rem] text-white shrink-0 bg-[#000000] rounded-[.4rem]">
+                                Industry Insight
+                            </span>
+
+                            <div className="flex items-center gap-2">
+                                <Calendar className="inline size-[1.6rem]" />
+                                <span className="sm:text-[1.5rem] text-[1.2rem]">March 15, 2025</span>
+                                <span className="sm:text-[1.5rem] text-[1.2rem]">8 mins read</span>
+                            </div>
+                        </div>
+
+                        <div className="flex flex-col">
+                            <h3 className="mt-[1.8rem] sm:text-[2rem] w-full text-[1.8rem] font-bold max-w-[35.1rem]">
+                                The Future of Stadium AV: Trends Reshaping Live Entertainment
+                            </h3>
+
+                            <p className="text-[1.4rem] mt-4 w-full sm:max-w-[25.2rem]">
+                                Explore how emerging technologies in audio, video, and lighting are transforming the stadium experience for millions of fans worldwide.
+                            </p>
+
+                            <Button
+                                className="p-0 text-[1.4rem] w-fit underline font-normal mt-12"
+                                variant={"ghost"}
+                            >
+                                Read Full Article
+                            </Button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <h2 className="sm:text-[3rem] text-[2.8rem] my-8 sm:mt-20 font-semibold">Latest Articles</h2>
+
+            <div className="grid sm:gap-8 gap-12 sm:mt-20 sm:grid-cols-2">
                 {
                     news.map((item, index) => {
                         return (
@@ -76,7 +125,7 @@ const Card = ({ image, name, date, time, title, decription, link }: {
                 alt=""
                 className="w-full h-auto"
             />
-            <div className="bg-[#F5F5F5] flex flex-col border-[1.5px] border-black py-[1.5rem] sm:px-8">
+            <div className="bg-[#F5F5F5] flex flex-col border-[1.5px] border-black py-[1.5rem] sm:px-8 px-4">
                 <div className="flex items-center justify-between">
                     <span className="p-2 text-[1.2rem] rounded-[.3rem] bg-black text-white">{name}</span>
                     <div className="flex gap-2 items-center">
