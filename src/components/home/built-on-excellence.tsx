@@ -1,6 +1,5 @@
 import CustomButton from "../common/custom-button";
 import MaxContainer from "../common/max-container";
-import { Button } from "../ui/button";
 
 const BuiltOnExcellence = () => {
     const partners = [
