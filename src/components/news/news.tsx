@@ -58,7 +58,7 @@ const News = () => {
                         </span>
                     </div>
 
-                    <div className="border-[1.5px] flex-1 sm:p-8 p-4 bg-[#F5F5F5] border-black">
+                    <div className="flex-1 shadow sm:p-8 p-4 bg-[#F5F5F5]">
                         <div className="flex items-center justify-between">
                             <span className="p-2 sm:text-[1.4rem] text-[1.2rem] text-white shrink-0 bg-[#000000] rounded-[.4rem]">
                                 Industry Insight
@@ -119,13 +119,13 @@ const Card = ({ image, name, date, time, title, decription, link }: {
     link: string;
 }) => {
     return (
-        <div className="w-full">
+        <div className="w-full shadow-xl">
             <img
                 src={image}
                 alt=""
                 className="w-full h-auto"
             />
-            <div className="bg-[#F5F5F5] flex flex-col border-[1.5px] border-black py-[1.5rem] sm:px-8 px-4">
+            <div className="bg-[#F5F5F5] flex flex-col py-[1.5rem] sm:px-8 px-4">
                 <div className="flex items-center justify-between">
                     <span className="p-2 text-[1.2rem] rounded-[.3rem] bg-black text-white">{name}</span>
                     <div className="flex gap-2 items-center">

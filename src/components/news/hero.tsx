@@ -1,15 +1,19 @@
+import MaxContainer from "../common/max-container";
+
 const Hero = () => {
-    return ( 
-        <section className="flex bg-[url('/contact-hero.png')] bg-cover bg-no-repeat px-10 sm:px-32 flex-col items-center text-center justify-center text-white sm:h-[min(100vh,960px)] h-[28.4rem]">
-            <h1 className="sm:text-[8.1rem] text-[3.2rem] text-center font-bold">Insights & Knowledge</h1>
-            <p className="sm:text-[2rem] text-[1.6rem] max-w-400 w-full font-normal">Industry trends, technical guides, and expert perspectives on audiovisual technology</p>
-            <img 
-                src="/cedia.png" 
-                alt="cedia" 
-                className="sm:w-[19.6rem] w-[14.1rem] sm:mt-8" 
-            />
+    return (
+        <section className="flex bg-fixed bg-[url('/contact-hero.png')] bg-cover bg-no-repeat px-10 sm:px-32 flex-col justify-center text-white sm:h-[min(100vh,960px)] h-[28.4rem]">
+            <MaxContainer className="">
+                <h1 className="sm:text-[6.1rem] text-[3.2rem]  font-bold">Insights & Knowledge</h1>
+                <p className="sm:text-[1.8rem] text-[1.6rem] max-w-400 w-[50%] font-normal">Industry trends, technical guides, and expert perspectives on audiovisual technology</p>
+                <img
+                    src="/cedia.png"
+                    alt="cedia"
+                    className="sm:w-[19.6rem] w-[14.1rem] sm:mt-8"
+                />
+            </MaxContainer>
         </section>
-     );
+    );
 }
- 
+
 export default Hero;

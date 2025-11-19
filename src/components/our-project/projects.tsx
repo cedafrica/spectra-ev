@@ -41,7 +41,7 @@ const Projects = () => {
             ]
         },
         {
-            title: "Restaurants and cafes",
+            title: "Cafés & Restaurants ",
             content: "",
             value: "restaurant",
             projects: [
@@ -69,7 +69,7 @@ const Projects = () => {
             ]
         },
         {
-            title: "Night Clubs",
+            title: "Night Clubs & Lounges ",
             content: "",
             value: "night",
             projects: [
@@ -97,9 +97,9 @@ const Projects = () => {
             ]
         },
         {
-            title: "Lounges",
+            title: "Large Congregations ",
             content: "",
-            value: "lounge",
+            value: "Congregations",
             projects: [
                 {
                     image: "/dance.png",
@@ -125,7 +125,7 @@ const Projects = () => {
             ]
         },
         {
-            title: "Event Centres",
+            title: "Hotels & Resorts",
             content: "",
             value: "event-centres",
             projects: [
@@ -153,9 +153,94 @@ const Projects = () => {
             ]
         },
         {
-            title: "Museums",
+            title: "Stadiums & Large Arenas ",
             content: "",
-            value: "museums",
+            value: "stadiums",
+            projects: [
+                {
+                    image: "/dance.png",
+                    name: "Lagos , Nigeria",
+                    date: "January 27th, 2025",
+                    title: "National Stadium Audio Upgrade",
+                    link: "#"
+                },
+                {
+                    image: "/dance.png",
+                    name: "Lagos , Nigeria",
+                    date: "January 27th, 2025",
+                    title: "National Stadium Audio Upgrade",
+                    link: "#"
+                },
+                {
+                    image: "/dance.png",
+                    name: "Lagos , Nigeria",
+                    date: "January 27th, 2025",
+                    title: "National Stadium Audio Upgrade",
+                    link: "#"
+                },
+            ]
+        },
+
+        {
+            title: "Auditoriums & Concert Halls",
+            content: "",
+            value: "auditoriums",
+            projects: [
+                {
+                    image: "/dance.png",
+                    name: "Lagos , Nigeria",
+                    date: "January 27th, 2025",
+                    title: "National Stadium Audio Upgrade",
+                    link: "#"
+                },
+                {
+                    image: "/dance.png",
+                    name: "Lagos , Nigeria",
+                    date: "January 27th, 2025",
+                    title: "National Stadium Audio Upgrade",
+                    link: "#"
+                },
+                {
+                    image: "/dance.png",
+                    name: "Lagos , Nigeria",
+                    date: "January 27th, 2025",
+                    title: "National Stadium Audio Upgrade",
+                    link: "#"
+                },
+            ]
+        },
+        {
+            title: "Concerts & Live Events",
+            content: "",
+            value: "concert",
+            projects: [
+                {
+                    image: "/dance.png",
+                    name: "Lagos , Nigeria",
+                    date: "January 27th, 2025",
+                    title: "National Stadium Audio Upgrade",
+                    link: "#"
+                },
+                {
+                    image: "/dance.png",
+                    name: "Lagos , Nigeria",
+                    date: "January 27th, 2025",
+                    title: "National Stadium Audio Upgrade",
+                    link: "#"
+                },
+                {
+                    image: "/dance.png",
+                    name: "Lagos , Nigeria",
+                    date: "January 27th, 2025",
+                    title: "National Stadium Audio Upgrade",
+                    link: "#"
+                },
+            ]
+        },
+        {
+            title: "Boardrooms & Conference Rooms ",
+            content: "",
+            value: "boardrooms",
             projects: [
                 {
                     image: "/dance.png",
@@ -186,13 +271,13 @@ const Projects = () => {
         <section className="sm:px-32 px-10 sm:pt-[8.1rem] pt-12">
             <MaxContainer>
                 <Tabs defaultValue={tabs[0].value} className="bg-transparent justify-between  rounded-0!">
-                    <TabsList className="justify-between rounded-none pb-0 h-fit bg-transparent overflow-scroll sm:overflow-hidden border-b border-b-[#000000] w-full">
+                    <TabsList className="justify-between rounded-none pb-0 h-fit bg-transparent overflow-x-scroll border-b border-b-[#000000] w-full">
                         {
                             tabs.map((tab, index) => (
                                 <TabsTrigger
                                     key={index}
                                     value={tab.value}
-                                    className="text-[1.6rem] data-[state=active]:shadow-none data-[state=active]:border-b-black data-[state=active]:border-b-[1.5px] rounded-none ring-0 h-15! font-semibold"
+                                    className="text-[1.6rem] data-[state=active]:shadow-none data-[state=active]:border-b-black data-[state=active]:border-b-[1.5px] rounded-none ring-0 mr-[1.2rem] h-15! font-semibold"
 
                                 >
                                     {tab.title}
@@ -236,13 +321,14 @@ const Card = ({ image, name, date, title, link }: {
 }) => {
     return (
         <div
-            className="max-w-160 w-full"
+            className="max-w-160 shadow-2xl w-full"
         >
             <img
                 src={image}
                 alt="logo"
+                className="w-full"
             />
-            <div className="sm:p-[2.3rem] p-[1.4rem] flex border-[1.5px] border-black flex-col bg-[#F5F5F5]">
+            <div className="sm:p-[2.3rem] p-[1.4rem] flex flex-col bg-[#F5F5F5]">
                 <div className="flex items-center justify-between">
                     <p className="">
                         <UserRound className="inline-block mr-2" />

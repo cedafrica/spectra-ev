@@ -34,7 +34,7 @@ const OurProcess = () => {
     return (
         <section className="bg-black  text-white sm:px-32 px-10 py-[5.4rem] sm:py-[8.2rem]">
             <h2 className="text-center text-[3.8rem]  font-bold">Our Process</h2>
-            <p className="text-center sm:text-[2.4rem] text-[1.6rem] font-regular max-w-[65.1rem] mx-auto">From initial consultation to ongoing support, we're with you every step of the way</p>
+            <p className="text-center sm:text-[1.8rem] text-[1.6rem] font-normal max-w-[50.1rem] mx-auto">From initial consultation to ongoing support, we're with you every step of the way</p>
 
             <MaxContainer
                 className="grid sm:grid-cols-3 grid-cols-1 gap-[2.3rem] mt-[6.1rem] sm:mt-16 grid-row-2"
@@ -45,7 +45,7 @@ const OurProcess = () => {
 
                         return (
                             <div
-                                className={cn(card.classname, "flex flex-col data-[isEven=false]:bg-white sm:data-[isEven=false]:px-[2.6rem] data-[isEven=false]:px-8 data-[isEven=false]:py-[4.8rem] data-[isEven=true]:pl-8 sm:data-[isEven=true]:pl-[4.3rem] h-[32.1rem] justify-center sm:h-auto data-[isEven=true]:pb-[4.3rem] sm:data-[isEven=true]:pr-[9.1rem]")}
+                                className={cn(card.classname, "flex flex-col data-[isEven=false]:bg-white sm:data-[isEven=false]:px-[2.6rem] data-[isEven=false]:px-8 data-[isEven=false]:py-[4.8rem] data-[isEven=true]:pl-8 sm:data-[isEven=true]:pl-[4.3rem] h-[32.1rem] justify-center sm:h-auto data-[isEven=true]:pb-[4.3rem] sm:data-[isEven=true]:pr-[9.1rem] rounded-2xl")}
                                 key={index}
                                 data-isEven={isEven ? "true" : "false"}
                             >

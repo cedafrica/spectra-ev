@@ -1,13 +1,19 @@
 const Hero = () => {
     return ( 
-        <section className="flex bg-[url('/contact-hero.png')] bg-cover bg-no-repeat px-10 sm:px-32 flex-col items-center z justify-center text-white sm:h-[min(100vh,960px)] h-[28.4rem]">
-            <h1 className="sm:text-[8.1rem] text-[3.2rem] text-center font-bold">Let's Connect</h1>
-            <p className="sm:text-[2rem] text-[1.6rem] max-w-400 w-full font-normal">Ready to transform your space with premium audiovisual solutions? Get in touch today.</p>
-            <img 
-                src="/cedia.png" 
-                alt="cedia" 
-                className="sm:w-[19.6rem] w-[14.1rem] sm:mt-8" 
-            />
+        <section className="relative flex bg-[url('/cont.webp')] bg-no-repeat px-10 sm:px-32 bg-size-[100%_100%] flex-col  justify-center text-white sm:h-[min(100vh,960px)] h-[28.4rem]">
+            {/* Black overlay */}
+            <div className="absolute inset-0 bg-black/50 z-0"></div>
+            
+            {/* Content with higher z-index */}
+            <div className="relative z-10 flex flex-col">
+                <h1 className="sm:text-[5.5rem] leading-[120%] max-w-280 text-[3.2rem] font-bold">Let's Design your Next Experience</h1>
+                <p className="sm:text-[2rem] mt-[2.1rem] text-[1.6rem] max-w-400 w-full font-normal">Contact Us</p>
+                <img 
+                    src="/cedia.png" 
+                    alt="cedia" 
+                    className="sm:w-[19.6rem] w-[14.1rem] sm:mt-18" 
+                />
+            </div>
         </section>
      );
 }

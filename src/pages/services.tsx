@@ -7,7 +7,11 @@ const Services = () => {
     return (
         <>
             <Hero />
-            <div className="px-10 pb-20 sm:pb-0">
+            <div className="px-10 pt-20 pb-20 sm:pb-0">
+                <h2 className="text-center  sm:text-[3.6rem] font-bold">Where Every Space Speaks Through Sound, Light &
+                    Vision.</h2>
+                <p className="text-center sm:mb-30 sm:text-[1.8rem] max-w-300 mx-auto">Bespoke AV integration that transforms commercial
+                    spaces into immersive, unforgettable experiences.</p>
                 <Solutions />
             </div>
             <OurProcess />

@@ -17,7 +17,7 @@ const Content = () => {
                     {/* Right: Sidebar with Categories and Newsletter */}
                     <div className="flex flex-col gap-12">
                         {/* Categories Sidebar */}
-                        <div className="border bg-[#F5F5F5] pt-6 px-6 sm:pt-[2.8rem] sm:pl-[2.7rem] sm:pr-[4.2rem] pb-8">
+                        <div className="border shadow bg-[#F5F5F5] pt-6 px-6 sm:pt-[2.8rem] sm:pl-[2.7rem] sm:pr-[4.2rem] pb-8">
                             <h2 className="text-[2.2rem] font-bold">Categories</h2>
                             <div className="flex gap-2 mt-[2.1rem] flex-col">
                                 <div className="flex items-center justify-between">
@@ -40,7 +40,7 @@ const Content = () => {
                         </div>
 
                         {/* Newsletter Sidebar */}
-                        <div className="bg-[#F5F5F5] mb-12 sm:mb-0 sm:px-[1.6rem] p-4 sm:py-[2.6rem] h-fit">
+                        <div className="bg-[#F5F5F5] shadow mb-12 sm:mb-0 sm:px-[1.6rem] p-4 sm:py-[2.6rem] h-fit">
                             <h2 className="sm:text-[2rem] text-[1.8rem] font-bold">Stay Updated</h2>
                             <p className="sm:text-[1.6rem] text-[1.4rem] mt-4">
                                 Get the latest insights and industry news delivered to your inbox.

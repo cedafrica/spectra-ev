@@ -46,12 +46,13 @@ const ReadTheLatestNews = () => {
                     News.map((item, index) => {
                         return (
                             <div
-                                className="max-w-160 w-full"
+                                className="max-w-160 overflow-hidden w-full"
                                 key={index}
                             >
                                 <img
                                     src={item.image}
                                     alt="logo"
+                                    className="w-full"
                                 />
                                 <div className="sm:p-[2.3rem] p-[1.4rem] flex flex-col bg-[#F5F5F5]">
                                     <div className="flex items-center justify-between">

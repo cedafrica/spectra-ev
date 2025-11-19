@@ -28,6 +28,19 @@ const Content = () => {
 
     const tabs = [
         {
+            title: "All",
+            value: "all",
+            content: [
+                "/infiled.svg",
+                "/cci.svg",
+                "/bargo.svg",
+                "/avpro.svg",
+                "/sr.svg",
+                "/samsung.svg",
+                "/christic.svg"
+            ]
+        },
+        {
             title: "Video",
             value: "Video",
             content: [
