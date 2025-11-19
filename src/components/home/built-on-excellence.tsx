@@ -1,3 +1,4 @@
+import CustomButton from "../common/custom-button";
 import MaxContainer from "../common/max-container";
 import { Button } from "../ui/button";
 
@@ -73,7 +74,7 @@ const BuiltOnExcellence = () => {
                         className="w-full max-w-[58.8rem]"
                     />
                     <div className="flex flex-col">
-                        <h2 className="sm:text-[4.6rem] text-[2.8rem] text-center sm:text-start font-semibold max-w-[50.4rem]">We are Architects of AV</h2>
+                        <h2 className="sm:text-[4.6rem] text-[2.8rem] text-center sm:text-start font-semibold max-w-[50.4rem]">Elevating Audiovisual Excellence</h2>
                         <p className="sm:text-[2.2rem] text-[1.8rem] text-center sm:text-start max-w-[52.1rem]">Spectra AVL is redefining Nigeria’s AVL scene with Audio Technology — bringing 31+ years of expertise and 4,500+ projects to deliver world-class, locally tailored solutions.</p>
                         <div className="grid grid-cols-2 gap-[2.1rem] sm:grid-cols-4 mt-[2.1rem] sm:mt-[4.8rem]">
                             {
@@ -91,9 +92,9 @@ const BuiltOnExcellence = () => {
                             }
                         </div>
 
-                        <Button className="px-8 py-6 my-[2.1rem] sm:my-0 text-[1.4rem] bg-transparent sm:mt-8 text-black border mx-auto rounded-[3rem] border-black">
+                        <CustomButton className="text-black border-[1.5px] border-black px-8!">
                             Learn More
-                        </Button>
+                        </CustomButton>
                     </div>
                 </div>
             </MaxContainer>

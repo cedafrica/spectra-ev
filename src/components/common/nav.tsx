@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 
 const Nav = () => {
     const [open, setOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
     const location = useLocation();
 
     const toggleNav = () => {
@@ -22,6 +23,16 @@ const Nav = () => {
             document.body.style.position = "static";
         }
     }, [open]);
+
+    // Handle scroll effect
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 50);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
     const NavItems = [
         {
@@ -54,7 +65,9 @@ const Nav = () => {
         },
     ]
     return (
-        <nav className="bg-[#000000] w-full sm:px-32 px-10 py-4">
+        <nav className={`w-full sm:px-32 px-10 py-4 fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+            scrolled ? "bg-black/50" : "bg-transparent"
+        }`}>
             <MaxContainer
                 className="flex justify-between items-center"
             >

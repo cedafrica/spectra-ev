@@ -1,6 +1,7 @@
 import MaxContainer from "../common/max-container";
 import { Button } from "../ui/button";
 import { Link } from "react-router-dom";
+import CustomButton from "./custom-button";
 
 const Services = () => {
     const Solutions = [
@@ -38,11 +39,11 @@ const Services = () => {
                             >
                                 <div 
                                     className={`self-center max-w-220 ${isEven ? 'sm:order-2 sm:pl-16' : 'sm:order-1 sm:pl-32'}`}>
-                                    <h2 className="sm:text-[9rem] mt-[2.1rem] sm:mt-0 text-[2.8rem] font-semibold sm:font-bold sm:leading-40">{solution.name}</h2>
+                                    <h2 className="sm:text-[7rem] mt-[2.1rem] sm:mt-0 text-[2.8rem] font-semibold sm:font-bold sm:leading-[120%]">{solution.name}</h2>
                                     <p className="sm:text-[2.2rem] text-[1.8rem] mt-4 sm:mt-[2.8rem]">{solution.text}</p>
-                                    <Button className="px-8 sm:mt-10 bg-transparent border border-black rounded-4xl text-[1.2rem] text-black my-8 py-6" asChild>
-                                        <Link to={""}>Learn More</Link>
-                                    </Button>
+                                  <CustomButton className="text-black border border-black px-[2rem]!">
+                                    Learn More
+                                  </CustomButton>
                                 </div>
 
                                 <img

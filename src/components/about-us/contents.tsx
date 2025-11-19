@@ -38,7 +38,7 @@ const Content = () => {
             <div className="bg-black text-white sm:px-32 py-13 sm:py-0 px-10">
                 <MaxContainer className="grid sm:grid-cols-2">
                     <div className="flex flex-col justify-center ">
-                        <h2 className="font-bold sm:text-center text-start sm:text-[4.8rem] text-[2rem]">We are Architects of AV</h2>
+                        <h2 className="font-bold text-start sm:text-[4.8rem] text-[2rem]">We are Architects of AV</h2>
                         <p className="sm:text-[2rem] text-[1.4rem] mt-6 sm:mt-0">At Spectra AVL, we are redefining the audio, video, and lighting (AVL) landscape in Nigeria. With our strategic partnership with Audio Technology, we bring together world-class innovation and local expertise, delivering premium AVL solutions tailored to Nigeria’s unique need.
                             With Audio Technology bringing onboard a legacy spanning 31+ years, a team of 100+ design and engineering specialists, and over 4,500+ successfully completed projects, we are at the forefront of creating immersive and high-performance AVL experiences.</p>
                     </div>
