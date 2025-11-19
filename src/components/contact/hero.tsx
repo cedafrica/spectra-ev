@@ -1,6 +1,6 @@
 const Hero = () => {
     return ( 
-        <section className="relative flex bg-[url('/cont.webp')] bg-no-repeat px-10 sm:px-32 bg-size-[100%_100%] flex-col  justify-center text-white sm:h-[min(100vh,960px)] h-[28.4rem]">
+        <section className="relative flex bg-[url('/cont.webp')] bg-no-repeat px-10 sm:px-32 sm:bg-size-[100%_100%] flex-col  justify-center text-white sm:h-[min(100vh,960px)] h-screen bg-cover">
             {/* Black overlay */}
             <div className="absolute inset-0 bg-black/50 z-0"></div>
             
