@@ -23,7 +23,7 @@ const CustomButton = ({
     onClick,
     type = "button",
     disabled = false,
-    variant = "outline",
+    // variant = "outline",
     link = ""
 }: CustomButtonProps) => {
     const baseClasses = "sm:text-[1.6rem] text-[1.2rem] border px-8 py-8 rounded-[3rem] border-white mt-[1.8rem] bg-transparent text-white hover:bg-white cursor-pointer hover:text-black sm:w-fit w-full";
