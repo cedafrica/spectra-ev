@@ -1,6 +1,4 @@
 import MaxContainer from "../common/max-container";
-import { Button } from "../ui/button";
-import { Link } from "react-router-dom";
 import CustomButton from "./custom-button";
 
 const Services = () => {
