@@ -1,5 +1,5 @@
-import MaxContainer from "./max-container";
-import { Link, useLocation } from "react-router-dom";
+// import MaxContainer from "./max-container";
+import { useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 const Nav = () => {
@@ -7,9 +7,9 @@ const Nav = () => {
     const [scrolled, setScrolled] = useState(false);
     const location = useLocation();
 
-    const toggleNav = () => {
-        setOpen(!open);
-    };
+    // const toggleNav = () => {
+    //     setOpen(!open);
+    // };
 
     // Close nav when route changes
     useEffect(() => {
@@ -34,41 +34,41 @@ const Nav = () => {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
-    const NavItems = [
-        {
-            label: "Home",
-            href: "/",
-        },
-        {
-            label: "About Us",
-            href: "/about",
-        },
-        {
-            label: "Services",
-            href: "/services",
-        },
-        {
-            label: "Projects",
-            href: "/projects",
-        },
-        {
-            label: "Partners",
-            href: "/partnership",
-        },
-        {
-            label: "News",
-            href: "/news",
-        },
-        {
-            label: "Contact",
-            href: "/contact",
-        },
-    ]
+    // const NavItems = [
+    //     {
+    //         label: "Home",
+    //         href: "/",
+    //     },
+    //     {
+    //         label: "About Us",
+    //         href: "/about",
+    //     },
+    //     {
+    //         label: "Services",
+    //         href: "/services",
+    //     },
+    //     {
+    //         label: "Projects",
+    //         href: "/projects",
+    //     },
+    //     {
+    //         label: "Partners",
+    //         href: "/partnership",
+    //     },
+    //     {
+    //         label: "News",
+    //         href: "/news",
+    //     },
+    //     {
+    //         label: "Contact",
+    //         href: "/contact",
+    //     },
+    // ]
     return (
         <nav className={`w-full sm:px-32 px-10 py-4 fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
             scrolled ? "bg-black/50" : "bg-transparent"
         }`}>
-            <MaxContainer
+            {/* <MaxContainer
                 className="flex justify-between items-center"
             >
                 <img
@@ -113,7 +113,7 @@ const Nav = () => {
                             }`}
                     ></div>
                 </div>
-            </MaxContainer>
+            </MaxContainer> */}
         </nav>
     );
 }
