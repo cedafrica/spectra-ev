@@ -7,13 +7,13 @@ interface BodyProps {
 
 const Body = ({ contents }: BodyProps) => {
     return (
-        <section className="sm:px-32 sm:py-25 px-10">
-            <MaxContainer className="flex max-w-[1000px] flex-col gap-8">
+        <section className="sm:px-32 sm:py-25 py-20 px-10">
+            <MaxContainer className="flex max-w-[1000px] flex-col sm:gap-8 gap-18">
                 {
                     contents.map((content, index) => {
                         return (
                             <div
-                                className={`flex ${ index % 2 ? "flex-row-reverse" : ""} items-center gap-16`}
+                                className={`flex flex-col sm:flex-row ${ index % 2 ? "sm:flex-row-reverse" : ""} items-center sm:gap-16 gap-10`}
                                 key={index}
                             >
                                 <img
@@ -21,7 +21,7 @@ const Body = ({ contents }: BodyProps) => {
                                     alt=""
                                     className="w-200 rounded-xl"
                                 />
-                                <div className="w-[55%] ">
+                                <div className="sm:w-[55%] ">
                                     <h2 className="text-[2.2rem] font-semibold">{content.title}</h2>
 
                                     <ul className="list-inside list-disc ">

@@ -11,6 +11,7 @@ import { ChevronDown } from "lucide-react";
 
 const Nav = () => {
     const [open, setOpen] = useState(false);
+    const [openApplication, setOpenApplication] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const location = useLocation();
 
@@ -21,6 +22,7 @@ const Nav = () => {
     // Close nav when route changes
     useEffect(() => {
         setOpen(false);
+        setOpenApplication(false);
     }, [location.pathname]);
 
     useEffect(() => {
@@ -87,10 +89,6 @@ const Nav = () => {
                     label: "Hotels & Resorts",
                     link: "hotels-resorts"
                 },
-                // {
-                //     label: "Stadiums & Large Arenas ",
-                //     link: "stadiums-large-arenas"
-                // },
                 {
                     label: "Auditoriums & Concert Halls",
                     link: "auditoriums-concert-halls"
@@ -99,13 +97,9 @@ const Nav = () => {
                     label: "Concerts & Live Events",
                     link: "concerts-live-events"
                 },
-                // {
-                //     label: "Boardrooms & Conference Rooms ",
-                //     link: "boardrooms-conference-rooms"
-                // }
             ]
         },
-               {
+        {
             label: "News",
             href: "/news",
         },
@@ -138,12 +132,12 @@ const Nav = () => {
                             {
                                 item.type === "dropdown" ? (
                                     <>
-                                    <Popover>
+                                    <Popover open={openApplication} onOpenChange={setOpenApplication}>
                                         <PopoverTrigger className="text-xl font-semibold">
                                             Application
-                                            <ChevronDown className="size-6  inline ml-2" />
+                                            <ChevronDown className="size-6 inline ml-2" />
                                         </PopoverTrigger>
-                                        <PopoverContent className="w-fit! border shadow mt-8 bg-black/50 flex flex-col text-start">
+                                        <PopoverContent className="w-fit border shadow mt-8 bg-black/50 flex flex-col text-start">
                                             {
                                                 item.children.map((child, index) => {
                                                     return (
