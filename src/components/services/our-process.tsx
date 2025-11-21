@@ -33,7 +33,7 @@ const OurProcess = () => {
 
     return (
         <section className="bg-black  text-white sm:px-32 px-10 py-[5.4rem] sm:py-[8.2rem]">
-            <h2 className="text-center text-[3.8rem]  font-bold">Our Process</h2>
+            <h2 className="text-center text-[2.6rem] sm:text-[3.8rem]  font-bold">Our Process</h2>
             <p className="text-center sm:text-[1.8rem] text-[1.6rem] font-normal max-w-[50.1rem] mx-auto">From initial consultation to ongoing support, we're with you every step of the way</p>
 
             <MaxContainer
@@ -58,12 +58,12 @@ const OurProcess = () => {
                                     >
                                         <div className="">
                                             <h2
-                                                className="sm:text-[3rem] text-[2.8rem] data-[isEven=false]:text-black"
+                                                className="sm:text-[3rem] text-[2.4rem] data-[isEven=false]:text-black"
                                                 data-isEven={isEven ? "true" : "false"}
                                             >{card.title}</h2>
                                             <p
                                                 className="data-[isEven=false]:text-black
-                                            data-[isEven=false]:max-w-108  data-[isEven=true]:max-w-160 font-normal text-[2rem]"
+                                            data-[isEven=false]:max-w-108  data-[isEven=true]:max-w-160 font-normal sm:text-[2rem] text-[1.6rem]"
                                                 data-isEven={isEven ? "true" : "false"}
                                             >
                                                 {card.text}

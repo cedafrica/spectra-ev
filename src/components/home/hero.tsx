@@ -83,7 +83,7 @@ const Hero = () => {
                         <p className="text-[#FFFFFF] sm:w-[90%] mt-[2.4rem] text-[1.4rem] sm:text-[2rem]">
                             {currentSlideData.description}
                         </p>
-                        <Button className="sm:text-[1.6rem] text-[1.2rem] border px-8! py-8! rounded-[3rem] border-white mt-[1.8rem] bg-transparent text-white hover:bg-white! cursor-pointer hover:text-black! sm:w-fit w-full">
+                        <Button className="sm:text-[1.6rem] w-fit text-[1.2rem] border px-8! py-8! rounded-[3rem] border-white mt-[1.8rem] bg-transparent text-white hover:bg-white! cursor-pointer hover:text-black! sm:w-fit">
                             Schedule Consultation
                             <MoveRight className="size-[1.9rem]" />
                         </Button>

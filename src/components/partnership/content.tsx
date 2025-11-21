@@ -105,8 +105,8 @@ const Content = () => {
                     <p className="text-[1.8rem] max-w-[300px] mx-auto text-center font-normal">We partner with the world's most respected audiovisual brands</p>
                 </div>
 
-                <Tabs>
-                    <TabsList className="sm:gap-[4.1rem] gap-[2.1rem] flex rounded-none pb-0 h-fit bg-transparent overflow-scroll mt-[3.1rem] sm:overflow-hidden border-b border-b-[#000000] w-full">
+                <Tabs defaultValue="all">
+                    <TabsList className="sm:gap-[4.1rem] gap-[2.1rem] flex rounded-none pb-0! h-fit bg-transparent overflow-scroll mt-[3.1rem] sm:overflow-hidden border-b border-b-[#000000] w-full">
                         {
                             tabs.map((tab, index) => (
                                 <TabsTrigger

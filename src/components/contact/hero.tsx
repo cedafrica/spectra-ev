@@ -6,8 +6,8 @@ const Hero = () => {
             
             {/* Content with higher z-index */}
             <div className="relative z-10 flex flex-col">
-                <h1 className="sm:text-[5.5rem] leading-[120%] max-w-280 text-[3.2rem] font-bold">Let's Design your Next Experience</h1>
-                <p className="sm:text-[2rem] mt-[2.1rem] text-[1.6rem] max-w-400 w-full font-normal">Contact Us</p>
+                <h1 className="sm:text-[5.5rem] leading-[120%] max-w-280 text-[3.2rem] font-bold">Let’s Discuss on Your Next Project</h1>
+                {/* <p className="sm:text-[2rem] mt-[2.1rem] text-[1.6rem] max-w-400 w-full font-normal">Contact Us</p> */}
                 <img 
                     src="/cedia.png" 
                     alt="cedia" 
