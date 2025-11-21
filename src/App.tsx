@@ -10,6 +10,7 @@ import NewsLayout from './layout/news-layout'
 import News from './pages/news'
 import NewsInfo from './components/news/news-info'
 import Contact from './pages/contact'
+import Application from './pages/application'
 
 function App() {
   return (
@@ -44,6 +45,10 @@ function App() {
         <Route
           path='/contact'
           element={<Contact />}
+        />
+        <Route
+          path='/application/:id'
+          element={<Application />}
         />
       </Route>
     </Routes>

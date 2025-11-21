@@ -1,6 +1,13 @@
 import MaxContainer from "./max-container";
 import { Link, useLocation } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect, } from "react";
+import {
+    Popover,
+    PopoverContent,
+    PopoverTrigger,
+} from "@/components/ui/popover"
+import { Button } from "../ui/button";
+import { ChevronDown } from "lucide-react";
 
 const Nav = () => {
     const [open, setOpen] = useState(false);
@@ -56,18 +63,60 @@ const Nav = () => {
             href: "/partnership",
         },
         {
+            label: "Applications",
+            href: "/",
+            type: "dropdown",
+            children: [
+                {
+                    label: "Houses of Worship",
+                    link: "house-of-worship",
+                },
+                {
+                    label: "Cafés & Restaurants",
+                    link: "cafes-restaurants"
+                },
+                {
+                    label: "Night Clubs & Lounges ",
+                    link: "night-clubs-lounges"
+                },
+                {
+                    label: "Large Congregations ",
+                    link: "large-congregations"
+                },
+                {
+                    label: "Hotels & Resorts",
+                    link: "hotels-resorts"
+                },
+                // {
+                //     label: "Stadiums & Large Arenas ",
+                //     link: "stadiums-large-arenas"
+                // },
+                {
+                    label: "Auditoriums & Concert Halls",
+                    link: "auditoriums-concert-halls"
+                },
+                {
+                    label: "Concerts & Live Events",
+                    link: "concerts-live-events"
+                },
+                // {
+                //     label: "Boardrooms & Conference Rooms ",
+                //     link: "boardrooms-conference-rooms"
+                // }
+            ]
+        },
+               {
             label: "News",
             href: "/news",
         },
         {
             label: "Contact",
             href: "/contact",
-        },
+        }, 
     ]
     return (
-        <nav className={`w-full sm:px-32 px-10 py-4 fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-            scrolled ? "bg-black/50" : "bg-transparent"
-        }`}>
+        <nav className={`w-full sm:px-32 px-10 py-4 fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-black/50" : "bg-transparent"
+            }`}>
             <MaxContainer
                 className="flex justify-between items-center"
             >
@@ -83,15 +132,50 @@ const Nav = () => {
                 >
                     {NavItems.map((item) => (
                         <li
-                            key={item.href}
+                            key={item.label}
                             className="text-white hover:text-white/80 transition-colors"
                         >
-                            <Link
-                                to={item.href}
-                                className="text-xl font-semibold"
-                            >
-                                {item.label}
-                            </Link>
+                            {
+                                item.type === "dropdown" ? (
+                                    <>
+                                    <Popover>
+                                        <PopoverTrigger className="text-xl font-semibold">
+                                            Application
+                                            <ChevronDown className="size-6  inline ml-2" />
+                                        </PopoverTrigger>
+                                        <PopoverContent className="w-fit! border shadow mt-8 bg-black/50 flex flex-col text-start">
+                                            {
+                                                item.children.map((child, index) => {
+                                                    return (
+                                                        <Button
+                                                            key={index}
+                                                            className="text-white justify-start bg-transparent hover:bg-black py-6 transition-colors"
+                                                            asChild
+                                                        >
+                                                            <Link
+                                                                to={`/application/${child.link}`}
+                                                                className="text-xl font-semibold"
+                                                            >
+                                                                {child.label}
+                                                            </Link>
+                                                        </Button>
+                                                    )
+                                                })
+                                            }
+                                        </PopoverContent>
+                                    </Popover>
+                                    </>
+                                ) : (
+                                    <>
+                                        <Link
+                                            to={item.href}
+                                            className="text-xl font-semibold"
+                                        >
+                                            {item.label}
+                                        </Link>
+                                    </>
+                                )
+                            }
                         </li>
                     ))}
                 </ul>
