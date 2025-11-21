@@ -16,13 +16,13 @@ const Nav = () => {
         setOpen(false);
     }, [location.pathname]);
 
-    // useEffect(() => {
-    //     if (open) {
-    //         document.body.style.position = "fixed";
-    //     } else {
-    //         document.body.style.position = "static";
-    //     }
-    // }, [open]);
+    useEffect(() => {
+        if (open) {
+            document.body.style.position = "fixed";
+        } else {
+            document.body.style.position = "static";
+        }
+    }, [open]);
 
     // Handle scroll effect
     useEffect(() => {
