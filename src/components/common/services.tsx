@@ -37,8 +37,8 @@ const Services = () => {
                             >
                                 <div 
                                     className={`self-center max-w-220 ${isEven ? 'sm:order-2 sm:pl-16' : 'sm:order-1 sm:pl-32'}`}>
-                                    <h2 className="sm:text-[6.2rem] mt-[2.1rem] sm:mt-0 text-[2.8rem] font-semibold sm:font-bold sm:leading-[120%]">{solution.name}</h2>
-                                    <p className="sm:text-[1.8rem] text-[1.8rem] mt-4 sm:mt-[2.8rem]">{solution.text}</p>
+                                    <h2 className="sm:text-[6.2rem] mt-[2.1rem] sm:mt-0 text-[2.4rem] font-semibold sm:font-bold sm:leading-[120%]">{solution.name}</h2>
+                                    <p className="sm:text-[1.8rem] text-[1.6rem] mt-2 sm:mt-[2.8rem]">{solution.text}</p>
                                   <CustomButton className="text-black border border-black px-8!">
                                     Learn More
                                   </CustomButton>

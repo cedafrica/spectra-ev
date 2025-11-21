@@ -113,14 +113,14 @@ const TrustedByLeaders = () => {
                                         className="sm:basis-1/3"
                                     >
                                         <div
-                                            className="px-[2.4rem] pt-[3.2rem] pb-[6.8rem] bg-[#F5F5F5] w-full rounded-[.54rem]"
+                                            className="px-[2.4rem] pt-[3.2rem] sm:pb-[6.8rem] pb-[4.1rem] bg-[#F5F5F5] w-full rounded-[.54rem]"
                                         >
                                             <img
                                                 src={item.image}
                                                 alt="logo"
                                                 className="sm:w-88"
                                             />
-                                            <p className="text-[1.8rem] mt-[7.9rem]">{item.description}</p>
+                                            <p className="sm:text-[1.8rem] text-[1.6rem] sm:mt-[7.9rem]  mt-[6.1rem]">{item.description}</p>
                                         </div>
                                     </CarouselItem>
                                 )

@@ -12,7 +12,7 @@ const Footer = () => {
                     <img
                         src="/spectra-logo.svg"
                         alt="logo"
-                        className="sm:w-[27.2rem] w-[18rem]"
+                        className="sm:w-[20.1rem] w-56"
                     />
                     <p className="sm:text-[2rem] text-[1.6rem] max-w-[35.1rem]">We are the curators of immersive audiovisual experiences, specializing in large-scale sound, video, and lighting solutions.</p>
                 </div>
