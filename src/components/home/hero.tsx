@@ -9,7 +9,6 @@ const Hero = () => {
 
     const slides = [
         {
-<<<<<<< HEAD
             caption: "SPACES WE TRANSFORM",
             title: "Welcome to Spectra AVL",
             description: "World-class audio, video, and lighting that elevate every environment.",
@@ -65,28 +64,6 @@ const Hero = () => {
         if (isAnimating) return;
         setIsAnimating(true);
 
-=======
-            title: "Welcome to Spectra AVL",
-            description: "Spectra AVL delivers world-class audio, video, and lighting (AVL) solutions",
-            maxWidth: "max-w-230"
-        },
-        {
-            title: "Powering the Pulse of Every Crowd.",
-            description: "From breathtaking LED displays to stadium-wide soundscapes, we create immersive experiences that captivate audiences and amplify energy.",
-            maxWidth: "max-w-350"
-        },
-        {
-            title: "Transforming Spaces with Innovation",
-            description: "Cutting-edge technology meets creative excellence to deliver unforgettable audio-visual experiences.",
-            maxWidth: "max-w-350"
-        }
-    ];
-
-    const scrollPrev = () => {
-        if (isAnimating) return;
-        setIsAnimating(true);
-        
->>>>>>> d838eebd4bb3719e9f3a70da88a13366a7291c57
         setTimeout(() => {
             setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
             setTimeout(() => {

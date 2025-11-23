@@ -1,7 +1,6 @@
 import Services from "../common/services";
 
 const PremiumSolution = () => {
-<<<<<<< HEAD
 
     return (
         <section className="bg-white sm:pt-[8.1rem] pb-[4.1rem] sm:pb-0 px-10 sm:px-0 pt-[4rem]">
@@ -10,13 +9,6 @@ const PremiumSolution = () => {
                 className="text-center font-semibold sm:text-[4rem] text-[3rem]">Premium Solutions</h2>
             <p data-animation='paragraph'
                 className="text-center mx-auto sm:text-[2rem] text-[1.8rem] max-w-[55.8rem]">Comprehensive audiovisual services backed by global partnerships and local expertise</p>
-=======
-   
-    return (
-        <section className="bg-white sm:pt-[8.1rem] pb-[4.1rem] sm:pb-0 px-10 sm:px-0 pt-[4rem]">
-            <h2 className="text-center font-semibold sm:text-[4rem] text-[3rem]">Premium Solutions</h2>
-            <p className="text-center mx-auto sm:text-[2rem] text-[1.8rem] max-w-[55.8rem]">Comprehensive audiovisual services backed by global partnerships and local expertise</p>
->>>>>>> d838eebd4bb3719e9f3a70da88a13366a7291c57
 
             <div className="sm:mt-[6.3rem] mt-4">
                 <Services />

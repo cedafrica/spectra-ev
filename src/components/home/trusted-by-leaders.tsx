@@ -79,26 +79,21 @@ const TrustedByLeaders = () => {
             description: "INFILED specializes in high-quality LED display solutions, offering innovative screens for events, retail, broadcasting, and large-scale installations."
         },
     ]
-    
+
     return (
         <section className="sm:px-32 px-10 sm:pt-[6.6rem] pt-[3.1rem]">
-<<<<<<< HEAD
             <h2
-             data-animation='header' 
-            className="text-center sm:text-[3.8rem] font-semibold text-[2.8rem]">Trusted by Industry Leaders</h2>
+                data-animation='header'
+                className="text-center sm:text-[3.8rem] font-semibold text-[2.8rem]">Trusted by Industry Leaders</h2>
             <p
-             data-animation='paragraph' 
-            className="text-center mx-auto sm:text-[2rem] text-[1.6rem] max-w-[47.1rem]">We partner with the world's most respected audiovisual brands</p>
-=======
-            <h2 className="text-center sm:text-[3.8rem] font-semibold text-[2.8rem]">Trusted by Industry Leaders</h2>
-            <p className="text-center mx-auto sm:text-[2rem] text-[1.6rem] max-w-[47.1rem]">We partner with the world's most respected audiovisual brands</p>
->>>>>>> d838eebd4bb3719e9f3a70da88a13366a7291c57
+                data-animation='paragraph'
+                className="text-center mx-auto sm:text-[2rem] text-[1.6rem] max-w-[47.1rem]">We partner with the world's most respected audiovisual brands</p>
 
             <MaxContainer
                 className="sm:mt-32 mt-[4.1rem]"
             >
-                <Carousel 
-                    className="w-full" 
+                <Carousel
+                    className="w-full"
                     setApi={(api) => {
                         carouselApiRef.current = api;
                         if (api) {
@@ -110,48 +105,31 @@ const TrustedByLeaders = () => {
                         loop: true,
                     }}
                 >
-                    <CarouselContent 
+                    <CarouselContent
                         className="w-full"
-                
+
                     >
                         {
                             leaders.map((item, index) => {
                                 return (
-                                    <CarouselItem 
-<<<<<<< HEAD
-    key={index}
-    className="sm:basis-1/3"
->
-    <div
-        className="flex flex-col justify-between px-[2.4rem] pt-[3.2rem] sm:pb-[6.8rem] pb-[4.1rem] bg-[#F5F5F5] w-full rounded-[.54rem] min-h-[28rem]" // equal height
-    >
-        <img
-            src={item.image}
-            alt="logo"
-            className="sm:w-50 w-24 mx-auto object-contain" // smaller logos, centered
-        />
-        <p className="sm:text-[1.8rem] text-[1.6rem] sm:mt-8 mt-6 text-center">
-            {item.description}
-        </p>
-    </div>
-</CarouselItem>
-
-=======
+                                    <CarouselItem
                                         key={index}
                                         className="sm:basis-1/3"
                                     >
                                         <div
-                                            className="px-[2.4rem] pt-[3.2rem] sm:pb-[6.8rem] pb-[4.1rem] bg-[#F5F5F5] w-full rounded-[.54rem]"
+                                            className="flex flex-col justify-between px-[2.4rem] pt-[3.2rem] sm:pb-[6.8rem] pb-[4.1rem] bg-[#F5F5F5] w-full rounded-[.54rem] min-h-[28rem]" // equal height
                                         >
                                             <img
                                                 src={item.image}
                                                 alt="logo"
-                                                className="sm:w-88"
+                                                className="sm:w-50 w-24 mx-auto object-contain" // smaller logos, centered
                                             />
-                                            <p className="sm:text-[1.8rem] text-[1.6rem] sm:mt-[7.9rem]  mt-[6.1rem]">{item.description}</p>
+                                            <p className="sm:text-[1.8rem] text-[1.6rem] sm:mt-8 mt-6 text-center">
+                                                {item.description}
+                                            </p>
                                         </div>
                                     </CarouselItem>
->>>>>>> d838eebd4bb3719e9f3a70da88a13366a7291c57
+
                                 )
                             })
                         }

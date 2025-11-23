@@ -19,17 +19,12 @@ const WhySpecialAVL = () => {
     ]
     return (
         <section className="bg-black px-10 sm:px-32 sm:pb-[11.1rem] pt-[3.1rem] sm:pt-[6.3rem] text-white">
-<<<<<<< HEAD
             <h2
                 data-animation='header'
                 className="text-center text-[2.8rem] sm:text-[4.3rem] font-semibold">Why Spectra AVL</h2>
             <p
                 data-animation='paragraph'
                 className="text-center text-[1.6rem] sm:text-[2rem] sm:max-w-240 mx-auto">We are the bridge between innovation and execution, bringing world-class audiovisual solutions to Nigeria.</p>
-=======
-            <h2 className="text-center text-[2.8rem] sm:text-[4.3rem] font-semibold">Why Spectra AVL</h2>
-            <p className="text-center text-[1.6rem] sm:text-[2rem] sm:max-w-240 mx-auto">We are the bridge between innovation and execution, bringing world-class audiovisual solutions to Nigeria.</p>
->>>>>>> d838eebd4bb3719e9f3a70da88a13366a7291c57
 
             <MaxContainer
                 className="sm:mt-36 flex-col-reverse mt-[3rem] sm:flex-row flex justify-center items-center gap-32"
@@ -48,11 +43,6 @@ const WhySpecialAVL = () => {
                                     <div className="flex gap-[1.8rem] flex-col items-center justify-center">
                                         <div
                                             className="size-16 flex  items-center  justify-center border text-[1.8rem] rounded-full"
-<<<<<<< HEAD
-
-=======
-                                           
->>>>>>> d838eebd4bb3719e9f3a70da88a13366a7291c57
                                         >
                                             {index + 1}
                                         </div>
@@ -65,17 +55,12 @@ const WhySpecialAVL = () => {
                                         }
                                     </div>
                                     <div className="">
-<<<<<<< HEAD
                                         <h3 
                                          data-animation='header'
                                         className="text-[2rem] mb-2 font-semibold">{item.title}</h3>
                                         <p
                                          data-animation='paragraph' 
                                         className="font-regular max-w-[33.1rem] text-[1.6rem]">{item.content}</p>
-=======
-                                        <h3 className="text-[2rem] mb-2 font-semibold">{item.title}</h3>
-                                        <p className="font-regular max-w-[33.1rem] text-[1.6rem]">{item.content}</p>
->>>>>>> d838eebd4bb3719e9f3a70da88a13366a7291c57
                                     </div>
                                 </div>
                             )
